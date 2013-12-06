@@ -294,13 +294,13 @@ get_header(); ?>
                         </div>
                         <div class="left" data-32200="opacity:0" data-32700="opacity:1">
                             <p class="green">
-                                <img src="/wp-content/themes/nebel.tv/images/security-1.png" width="204" height="183"/><br/>
+                                <img src="/wp-content/themes/nebel.tv/images/security-1.png" height="183"/><br/>
                                 Share your content with one friend or group. Nobody is able to pick in!
                             </p>
                         </div>
                         <div class="right" data-32200="opacity:0" data-32700="opacity:1">
                             <p class="green">
-                                <img src="/wp-content/themes/nebel.tv/images/security-2.png" width="196" height="224"/> <br/>
+                                <img src="/wp-content/themes/nebel.tv/images/security-2.png" height="183"/> <br/>
                                 Make your social network private: no one except you can analyze and monetize your network.
                             </p>
                         </div>
