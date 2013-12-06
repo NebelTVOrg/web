@@ -300,7 +300,7 @@ get_header(); ?>
                         </div>
                         <div class="right" data-32200="opacity:0" data-32700="opacity:1">
                             <p class="green">
-                                <img src="/wp-content/themes/nebel.tv/images/security-2.png" width="196" height="183"/> <br/>
+                                <img src="/wp-content/themes/nebel.tv/images/security-2.png" width="196" height="224"/> <br/>
                                 Make your social network private: no one except you can analyze and monetize your network.
                             </p>
                         </div>
