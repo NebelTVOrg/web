@@ -1,6 +1,6 @@
 <?php
 /**
- Template Name: Homepage
+Template Name: Homepage
  *
  * @package WordPress
  * @subpackage nebel.tv

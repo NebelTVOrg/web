@@ -241,16 +241,19 @@
     var homepage_effects = function() {
         var i = 0;
         $(window).scroll(function(event){
-            if($(this).scrollTop() < 1500)
+            if($(this).scrollTop() < 1500){
                 $('#menu-top-menu li').removeClass('current_page_item');
                 $('.side-menu-buttons li').removeClass('current-menu-item');
                 $('.side-menu-buttons li').eq(0).addClass('current-menu-item');
+                $('.try-it-now.top').addClass('hidden', 500);
+            }
+
             if($(this).scrollTop() > 1500){
                 $('#menu-top-menu li').removeClass('current_page_item');
                 $('#menu-top-menu li').eq(0).addClass('current_page_item');
                 $('.side-menu-buttons li').removeClass('current-menu-item');
                 $('.side-menu-buttons li').eq(1).addClass('current-menu-item');
-
+                $('.try-it-now.top').removeClass('hidden', 1000);
             }
             if($(this).scrollTop() > 2500){
                 $('#menu-top-menu li').removeClass('current_page_item');
@@ -419,7 +422,7 @@
                 $('.first-letter:eq(2)').next().removeClass('hidden', 1000, next);
             },
             function() {
-                $('.try-it-now').removeClass('hidden', 1000, next);
+                $('.homepage-header .try-it-now').removeClass('hidden', 1000, next);
             },
             function() {
                 $('.homepage-figure .phase-1').removeClass('hidden', { duration: 300, complete: next });
@@ -507,8 +510,10 @@
             elem.css('right', p_w / 2 - e_w /2);
         }
 
+        /* Switch off jQuery animation on mobile screens and screen with window width more then 1024*/
 
-        if($.browser.mobile !== true && $(window).width() > 1000){
+
+        if($.browser.mobile !== true && $(window).width() > 1024){
             if(typeof is_homepage !== 'undefined') {
                 $('.menu-secondary-menu-container').show();
                 $('.menu-secondary-menu-container').attr('data-7500', 'top: 101px');
