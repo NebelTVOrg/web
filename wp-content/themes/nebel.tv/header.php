@@ -50,7 +50,7 @@
             <div class="header-content">
                 <?php if(is_front_page()):?>
                     <div class="menu-item-highlighter" data-700="display:none"
-                         data-1500="display:block" data-2300="left:266px" data-2500="left:435px" data-5300="left:435px" data-5500="left:605px" data-7300="left:605" data-7500="left:763px"></div>
+                         data-1500="display:block" data-2300="left:255px" data-2500="left:420px" data-5300="left:420px" data-5500="left:580px" data-7300="left:580" data-7500="left:725px"></div>
                 <?php endif?>
                 <div id="navbar" class="navbar">
                     <nav id="site-navigation" class="navigation main-navigation" role="navigation">
