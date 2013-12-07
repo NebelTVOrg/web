@@ -41,10 +41,16 @@
         <div class="tv-set green"> </div>
         <div class="tv-set brown"> </div>
         <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-        <!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
+
     </a>
 
-    <?php wp_nav_menu( array('theme_location' => 'high', 'menu_class' => 'nav-menu'));?>
+    <?php wp_nav_menu( array(
+            'theme_location' => 'high',
+            'menu_class' => 'nav-menu',
+            'items_wrap'      => '<div class="mobile-logo" style="dysplay:none"><a class="mobile-logo-link" href="'. esc_url( home_url( '/' ) ).'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home"><div class="tv-set brown" style="dysplay:none"></div></a></div><ul id="%1$s" class="%2$s">%3$s</ul>',
+        )
+    )
+    ;?>
     <div id="page" class="hfeed site">
         <header id="masthead" class="site-header" role="banner">
             <div class="header-content">
