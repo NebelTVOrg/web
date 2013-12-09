@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: Homepage
+ Template Name: Homepage
  *
  * @package WordPress
  * @subpackage nebel.tv
@@ -8,9 +8,7 @@ Template Name: Homepage
  */
 
 get_header(); ?>
-    <script type="text/javascript">
-        var is_homepage = true;
-    </script>
+
     <div class="side-menu-buttons">
         <?php wp_nav_menu( array( 'theme_location' => 'side', 'menu_class' => '' ) ); ?>
     </div>
@@ -23,7 +21,7 @@ get_header(); ?>
                             <span class="first-letter hidden">W</span><span class="hidden">hatever you want.&nbsp;&nbsp;</span>
                             <span class="first-letter hidden">W</span><span class="hidden">henever you want.&nbsp;&nbsp;</span>
                             <span class="first-letter hidden">W</span><span class="hidden">herever you want.</span>
-                                <a class="try-it-now hidden" href="#"></a>
+                               <a class="try-it-now hidden" href="#"></a>
                         </h1>
 					</header><!-- .entry-header -->
 
@@ -294,13 +292,13 @@ get_header(); ?>
                         </div>
                         <div class="left" data-32200="opacity:0" data-32700="opacity:1">
                             <p class="green">
-                                <img src="/wp-content/themes/nebel.tv/images/security-1.png" height="183"/><br/>
+                                <img src="/wp-content/themes/nebel.tv/images/security-1.png" width="204" height="183"/><br/>
                                 Share your content with one friend or group. Nobody is able to pick in!
                             </p>
                         </div>
                         <div class="right" data-32200="opacity:0" data-32700="opacity:1">
                             <p class="green">
-                                <img src="/wp-content/themes/nebel.tv/images/security-2.png" height="183"/> <br/>
+                                <img src="/wp-content/themes/nebel.tv/images/security-2.png" width="196" height="183"/> <br/>
                                 Make your social network private: no one except you can analyze and monetize your network.
                             </p>
                         </div>
