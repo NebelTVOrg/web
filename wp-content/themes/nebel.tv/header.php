@@ -19,20 +19,16 @@
 <html <?php language_attributes(); ?> xmlns="http://www.w3.org/1999/html">
 <!--<![endif]-->
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <!--[if lt IE 9]>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-    <![endif]-->
-    <?php wp_head(); ?>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/nebel.tv/js/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="/wp-content/themes/nebel.tv/js/jquery.mCustomScrollbar.min.js"></script>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<!--[if lt IE 9]>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+	<![endif]-->
+	<?php wp_head(); ?>
 
-    <link rel="stylesheet" href="/wp-content/themes/nebel.tv/css/jquery.mCustomScrollbar.css"/>
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,27 +40,28 @@
 
     </a>
 
-    <?php wp_nav_menu( array(
-            'theme_location' => 'high',
-            'menu_class' => 'nav-menu',
-            'items_wrap'      => '<div class="mobile-logo" style="dysplay:none"><a class="mobile-logo-link" href="'. esc_url( home_url( '/' ) ).'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home"><div class="tv-set brown" style="dysplay:none"></div></a></div><ul id="%1$s" class="%2$s">%3$s</ul>',
-        )
-    )
-    ;?>
-    <div id="page" class="hfeed site">
-        <header id="masthead" class="site-header" role="banner">
-            <div class="header-content">
+
+
+	<div id="page" class="hfeed site">
+        <?php wp_nav_menu( array(  'theme_location' => 'high',
+                'menu_class' => 'nav-menu',
+                'items_wrap'      => '<div class="mobile-logo" style="dysplay:none"><a class="mobile-logo-link" href="'. esc_url( home_url( '/' ) ).'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home"><div class="tv-set brown" style="dysplay:none"></div></a></div><ul id="%1$s" class="%2$s">%3$s</ul><div id="donate"> <a href="#">Donate</a></div>',
+            )
+        );?>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="header-content">
                 <?php if(is_front_page()):?>
                     <div class="menu-item-highlighter" data-700="display:none"
                          data-1500="display:block" data-2300="left:255px" data-2500="left:420px" data-5300="left:420px" data-5500="left:580px" data-7300="left:580" data-7500="left:725px"></div>
                 <?php endif?>
-                <div id="navbar" class="navbar">
-                    <nav id="site-navigation" class="navigation main-navigation" role="navigation">
-                        <?php
-                        if(is_front_page()) { wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) );}
+				<div id="navbar" class="navbar">
+					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+						<?php
+                            if(is_front_page()) { wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) );}
                         ?>
-                    </nav><!-- #site-navigation -->
-                </div><!-- #navbar -->
+					</nav><!-- #site-navigation -->
+				</div><!-- #navbar -->
                 <div class="hot-links">
                     <ul>
                         <li class="try-it-li"><a class="try-it-now top <?php  if(is_front_page()) { echo 'hidden'; }?> " href="#"></a></li>
@@ -74,13 +71,13 @@
                     </ul>
 
                 </div>
-            </div>
+			</div>
             <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'secondary-nav-menu' ) ); ?>
 
             <div class="menu-link-holder">
-                <a href="#">Menu</a>
+                <a  data-toggle=".top-container" href="#">Menu</a>
             </div>
 
-        </header><!-- #masthead -->
+		</header><!-- #masthead -->
 
-        <div id="main" class="site-main">
+		<div id="main" class="site-main">
