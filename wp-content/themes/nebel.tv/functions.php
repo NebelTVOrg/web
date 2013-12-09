@@ -181,14 +181,19 @@ function twentythirteen_scripts_styles() {
     wp_enqueue_script( 'jquery-skrollr', get_template_directory_uri() . '/js/skrollr.min.js', array( 'jquery' ), '2013-11-11', true );
     wp_enqueue_script( 'jquery-browser-mobile', get_template_directory_uri() . '/js/detectmobilebrowser.js', array( 'jquery' ), '2013-11-11', true );
 
-    // Loads JavaScript file with functionality specific to Twenty Thirteen.
-    wp_enqueue_script( 'twentythirteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery-ui' ), '2013-07-18', true );
 
+
+    // Loads JavaScript file with functionality specific to Twenty Thirteen.
+    wp_enqueue_script( 'twentythirteen-script', get_template_directory_uri() . '/js/custom.js', array( 'jquery-ui' ), '2013-07-18', true );
+
+
+    if (is_front_page() and !is_handheld())
+        wp_enqueue_script( 'homepage-animation', get_template_directory_uri() . '/js/homepage-animation.js', array( 'jquery-ui' ), '2013-11-11', true );
     // Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
-	wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
+	//wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
+	//wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'twentythirteen-style', get_stylesheet_uri(), array(), '2013-07-18' );
@@ -557,3 +562,4 @@ function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
+
