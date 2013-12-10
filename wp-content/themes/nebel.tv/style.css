@@ -5707,6 +5707,7 @@ body.blog .entry-holder, .archive .entry-holder, .single .entry-holder {
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
+    min-height: 717px ;
 }
 .blog .mCSB_container, .single .mCSB_container {
     margin-right: 18px!important;
