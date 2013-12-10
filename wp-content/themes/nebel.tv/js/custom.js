@@ -19,6 +19,15 @@
         });
     });
     /* EOF Side menu */
+    
+    $('.content-scroll').mCustomScrollbar({
+        autoHideScrollbar: Boolean,
+        scrollInertia: 0,
+        mouseWheelPixels: 100,
+        advanced: {
+            autoScrollOnFocus: false
+        }
+    });
 
     var win_h = $(window).height();
     var sh_h = $('.site-header').height();
