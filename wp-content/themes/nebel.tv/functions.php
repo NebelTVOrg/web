@@ -195,7 +195,7 @@ function twentythirteen_scripts_styles() {
 
 	// Add Genericons font, used in the main stylesheet.
 	//wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
-
+    wp_enqueue_style( 'scrollbar', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.css ', array(), '2013-07-18' );
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'twentythirteen-style', get_stylesheet_uri(), array(), '2013-07-18' );
 
