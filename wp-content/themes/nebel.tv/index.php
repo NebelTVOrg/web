@@ -17,7 +17,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area clear">
-    <div id="content" class="site-content" role="main">
+    <div id="content" class="site-content">
         <article class="blog">
             <div class="entry-holder content-scroll">
                  <div class="entry-content">
@@ -60,7 +60,7 @@ get_header(); ?>
             <?php aeg_pagination(); ?>
             <?php get_template_part('inc/social'); ?>
         </div>
-    </div><!-- #content -->
+    ><!-- #content -->
     <?php get_sidebar(); ?>
 </div><!-- #primary -->
 <?php get_footer(); ?>
