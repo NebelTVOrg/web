@@ -53,7 +53,6 @@ get_header(); ?>
         </article>
         <div class="sub-content clear">
             <?php aeg_pagination(); ?>
-            <?php $target = (of_get_option('aeg_t_blank')) ? 'target="_blank"' : ''; ?>
             <?php get_template_part('inc/social'); ?>
         </div>
     </div><!-- #content -->

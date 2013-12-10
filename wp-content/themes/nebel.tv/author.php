@@ -11,52 +11,56 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php
-				/*
-				 * Queue the first post, that way we know what author
-				 * we're dealing with (if that is the case).
-				 *
-				 * We reset this later so we can run the loop
-				 * properly with a call to rewind_posts().
-				 */
-				the_post();
-			?>
-
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'All posts by %s', 'twentythirteen' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h1>
-			</header><!-- .archive-header -->
-
-			<?php
-				/*
-				 * Since we called the_post() above, we need to
-				 * rewind the loop back to the beginning that way
-				 * we can run the loop properly, in full.
-				 */
-				rewind_posts();
-			?>
-
-			<?php if ( get_the_author_meta( 'description' ) ) : ?>
-				<?php get_template_part( 'author-bio' ); ?>
-			<?php endif; ?>
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
-
-			<?php twentythirteen_paging_nav(); ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+<div id="primary" class="content-area clear">
+    <div id="content" class="site-content" role="main">
+        <article class="blog">
+            <div class="entry-holder content-scroll">
+                 <div class="entry-content">
+                    <ul class="posts">
+                        <?php if( have_posts() ) : 
+                        the_post();
+                        rewind_posts();
+                        ?>
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+                                    <div class="entry-thumbnail">
+                                        <?php the_post_thumbnail('thumb'); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <div class="post-preview">
+                                    <header class="entry-header clear">
+                                        <?php aeg_author_meta(); ?>
+                                        <h2 class="post-title"><a class="greener" href="<?php echo get_permalink(get_the_ID())?>"><?php the_title(); ?></a></h2>
+                                    </header>
+                                        <div class="entry-summary">
+                                            <?php 
+                                                $excerpt = get_the_excerpt(); 
+                                                echo aeg_string_limit_words($excerpt, 19);
+                                            ?>
+                                        </div>
+                                        <div class="entry-meta">
+                                            <div class="clear">
+                                                <a class="read-more" href="<?php echo get_permalink()?>">Read More&hellip;</a>
+                                                <?php aeg_author_meta(); ?>
+                                                <?php aeg_post_date(); ?>
+                                                <?php aeg_tag_meta(); ?>
+                                                <?php aeg_cat_meta(); ?>
+                                            </div>                                                
+                                        </div>
+                                </div><!-- .post-preview -->
+                            </li><!-- #post -->
+                        <?php endwhile; ?>
+                        <?php endif; ?>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <div class="sub-content clear">
+            <?php aeg_pagination(); ?>
+            <?php get_template_part('inc/social'); ?>
+        </div>
+    </div><!-- #content -->
+    <?php get_sidebar(); ?>
+</div><!-- #primary -->
 <?php get_footer(); ?>
