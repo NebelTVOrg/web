@@ -840,3 +840,4 @@ function aeg_get_calendar($initial = true, $echo = true) {
     else
         return apply_filters( 'aeg_get_calendar',  $calendar_output );
 
+}
