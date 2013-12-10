@@ -310,7 +310,7 @@ if ( ! function_exists( 'twentythirteen_post_nav' ) ) :
      *
      * @return void
      */
-    function twentythirteen_post_nav($limit) {
+    function twentythirteen_post_nav() {
         global $post;
 
         // Don't print empty markup if there's nowhere to navigate.
