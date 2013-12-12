@@ -42,7 +42,7 @@
 
 
 
-	<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site ">
         <?php wp_nav_menu( array(  'theme_location' => 'high',
                 'menu_class' => 'nav-menu',
                 'items_wrap'      => '<div class="mobile-logo" style="dysplay:none"><a class="mobile-logo-link" href="'. esc_url( home_url( '/' ) ).'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home"><div class="tv-set brown" style="dysplay:none"></div></a></div><ul id="%1$s" class="%2$s">%3$s</ul><div id="donate"> <a href="#">Donate</a></div>',
@@ -52,13 +52,13 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="header-content">
                 <?php if(is_front_page()):?>
-                    <div class="menu-item-highlighter" data-700="display:none"
-                         data-1500="display:block" data-2300="left:255px" data-2500="left:420px" data-5300="left:420px" data-5500="left:580px" data-7300="left:580" data-7500="left:725px"></div>
+                    <div class="menu-item-highlighter"></div>
                 <?php endif?>
 				<div id="navbar" class="navbar">
 					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 						<?php
                             if(is_front_page()) { wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) );}
+                            else {  wp_nav_menu( array( 'menu' => 'Sub Pages Menu', 'menu_class' => 'nav-menu' ) ); }
                         ?>
 					</nav><!-- #site-navigation -->
 				</div><!-- #navbar -->
@@ -72,8 +72,8 @@
 
                 </div>
 			</div>
-            <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'secondary-nav-menu' ) ); ?>
-
+            <?php  if(is_front_page()) {wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'secondary-nav-menu' ) );} ?>
+            <?php if ( is_page( 'about' ) || '63' == $post->post_parent ) {  wp_nav_menu( array( 'menu' => 'About Us Menu', 'menu_class' => 'secondary-nav-menu' ) ); }?>
             <div class="menu-link-holder">
                 <a  data-toggle=".top-container" href="#">Menu</a>
             </div>

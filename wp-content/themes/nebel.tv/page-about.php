@@ -1,0 +1,1 @@
+<?php wp_redirect( home_url('/about/nebel-tv-at-a-glance/') ); exit; ?>

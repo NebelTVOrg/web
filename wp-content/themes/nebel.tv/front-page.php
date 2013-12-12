@@ -60,8 +60,10 @@ get_header(); ?>
         </div><!-- .entry-content -->
 
     </article><!-- #post -->
+
     <article class="slice-2 slice" data-500="" data-3500="">
-        <div class="entry-content">
+        <div  class="entry-content">
+            <a  name="media-sharing"></a>
             <div class="media-sharing" data-700="top:1000px" data-1500="top:0px" data-2300="top:0px" data-3100="top:-600px">
                 <h2 class="green drop-shadow">Media sharing</h2>
                 <p class="white drop-shadow">Sharing your media has now never been easier. Instant access to the media files of your friends.</p>
@@ -75,6 +77,7 @@ get_header(); ?>
     </article><!-- #post -->
     <article class="slice-3 slice" data-2500="" data-5500="">
         <div class="entry-content">
+            <a  name="live-content"></a>
             <div class="live-recorded" data-2700="top:1000px" data-3500="top: 0px" data-5000="top:0px" data-5100="top:-600px">
                 <h2 class="green drop-shadow">Enjoy both Live and Recorded content</h2>
                 <p class="white drop-shadow">Pause live broadcasts and continue watching whenever you choose, wherever you choose.</p>
@@ -90,6 +93,7 @@ get_header(); ?>
     </article><!-- #post -->
     <article class="slice-4 slice" data-4500="" data-7500="">
         <div class="entry-content">
+            <a  name="smart-playback"></a>
             <div class="smart-playback-1" data-4700="top:1000px" data-5500="top:0px" data-6500="top:0px" data-7100="top:-600px"></div>
             <div class="smart-playback" data-4900="top:1000px" data-5900="top:0px" data-6600="top:0px" data-7500="top:-600px">
                 <h2 class="green drop-shadow">Smart playback</h2>
@@ -100,8 +104,22 @@ get_header(); ?>
             </div>
         </div><!-- .entry-content -->
     </article>
-    <article class="slice slice-5 ui ui-1" data-7500="" data-10500="">
+
+    </div><!-- #content -->
+
+
+   <div id="no-paralax">
+
+
+
+
+
+   <div id="content" >
+
+
+   <article class="slice slice-5 ui ui-1" data-7500="" data-10500="">
         <div class="entry-content">
+            <a  name="features"></a>
             <div class="text center" data-8000="top:1000px" data-8700="top:60px" data-10000="top:60px" data-10500="top:-600px">
                 <h2 class="green drop-shadow fs-42">Friend feeds</h2>
                 <p class="white drop-shadow">
@@ -200,19 +218,25 @@ get_header(); ?>
     </article>
     <article class="slice slice-12" data-22500="" data-25500="">
         <div class="entry-content">
+
             <div class="pay-zero-1" data-22500="left:-1000px" data-23000="left:0" data-24500="top:50px" data-25500="top:-600px"></div>
             <div class="pay-zero-2" data-22500="right:-1000px" data-23000="right:0" data-24500="top:110px" data-25500="top:-600px"></div>
             <div class="pay-zero" data-23000="top:1000px" data-23200="top:70px" data-24500="top:70px" data-25500="top:-600px">
-                <h2 class="white drop-shadow">Cutting edge technology is for free!!!</h2>
+                <a name="payzero"></a>
+                <h2 class="white drop-shadow"> is for free!!!</h2>
+
                 <p class="white drop-shadow">
+
                     That’s right, pay absolutely nothing, zero, zilch, for the software download for
                     your applicable device from the online store.
                 </p>
+
             </div>
         </div>
     </article>
     <article class="slice slice-13" data-24500="" data-27500="">
         <div class="entry-content">
+            <a name="paymentsystem"></a>
             <h2 class="white drop-shadow center smoothly" data-24500="top: 1000px" data-25200="top:60px" data-26300="top:60px" data-27500="top:-600px">
                 Smoothly integrated payment system: <br/>
                 Pay and get paid for your own online content
@@ -234,6 +258,7 @@ get_header(); ?>
     </article>
     <article class="slice slice-14" data-26500="" data-29500="">
         <div class="entry-content">
+            <a name="no-intermediates"></a>
             <h2 class="white drop-shadow center" data-27000="top:1000px" data-27700="top:60px" data-29000="top:60px" data-29400="top:-600px">
                 Follow your favorite artists without third party intervention
             </h2>
@@ -257,6 +282,7 @@ get_header(); ?>
     </article>
     <article class="slice slice-15" data-28500="" data-31500="">
         <div class="entry-content">
+            <a name="anartistyourself"></a>
             <h2 class="white drop-shadow" data-28900="top:1000px" data-29600="top:60px" data-31000="top:60px" data-31400="top:-600px">
                 An Artist yourself?<br/>
                 A budding independent film maker<br/>
@@ -285,6 +311,7 @@ get_header(); ?>
     </article>
     <article class="slice slice-16" data-30500="" data-33500="">
         <div class="entry-content">
+            <a name="security"></a>
             <div class="text" data-31500="top:1000px" data-32200="top:60px">
                 <h2 class="white drop-shadow">The ability to make all of your viewing activities private:</h2>
                 <h3 class="white drop-shadow">You have the ability to share your content and social network with only those you choose. Nothing is shared unless you choose to.</h3>
@@ -303,6 +330,7 @@ get_header(); ?>
             </div>
         </div>
     </article>
+   </div>
     </div><!-- #content -->
     </div><!-- #primary -->
 

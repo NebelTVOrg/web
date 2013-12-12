@@ -122,6 +122,9 @@ add_action( 'after_setup_theme', 'twentythirteen_setup' );
  *
  * @return string Font stylesheet or empty string if disabled.
  */
+
+add_filter('show_admin_bar', '__return_false');
+
 function twentythirteen_fonts_url() {
 	$fonts_url = '';
 
@@ -310,7 +313,7 @@ if ( ! function_exists( 'twentythirteen_post_nav' ) ) :
      *
      * @return void
      */
-    function twentythirteen_post_nav() {
+    function twentythirteen_post_nav($limit) {
         global $post;
 
         // Don't print empty markup if there's nowhere to navigate.
@@ -507,10 +510,12 @@ function twentythirteen_body_class( $classes ) {
 	if ( ! is_multi_author() )
 		$classes[] = 'single-author';
 
-	if ( is_active_sidebar( 'sidebar-2' ) && ! is_attachment() && ! is_404() )
-		$classes[] = 'sidebar';
+	//if ( is_active_sidebar( 'sidebar-2' ) && ! is_attachment() && ! is_404() )
+		//$classes[] = 'sidebar';
 
-	if ( ! get_option( 'show_avatars' ) )
+
+
+if ( ! get_option( 'show_avatars' ) )
 		$classes[] = 'no-avatars';
 
 	return $classes;
@@ -839,45 +844,5 @@ function aeg_get_calendar($initial = true, $echo = true) {
         echo apply_filters( 'aeg_get_calendar',  $calendar_output );
     else
         return apply_filters( 'aeg_get_calendar',  $calendar_output );
-}
 
-function aeg_recent_comments() {
-    include_once( ABSPATH . WPINC . '/feed.php' );
-    $feed_url = 'http://nebeltv.disqus.com/latest.rss';
-    $feed = fetch_feed($feed_url);
-    if ( ! is_wp_error( $feed ) ) :
-        $maxitems = $feed->get_item_quantity( 5 );
-        $rss_items = $feed->get_items( 0, $maxitems );
-    endif;
-
-    if (!empty($rss_items)) :
-        foreach ($rss_items as $item) :
-            $comment_link = esc_url( $item->get_permalink() );
-            $comment_content = strip_tags($item-> get_content());
-            $comment_title =  $item->get_title();
-            echo '<li>';
-            echo "<a href=\"" . $comment_link ."\">" . aeg_string_limit_words($comment_content, 5) . "</a>";
-            echo '</li>';
-        endforeach;
-    endif;
-}
-function aeg_socials($color='green') {
-    if($color == 'green') { ?>
-        <ul class="social-links">
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/linkedin.png" alt="LinkedIn" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/facebook.png" alt="Facebook" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/twitter.png" alt="Twitter" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/gplus.png" alt="GooglePlus" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/youtube.png" alt="Youtube" width="33" height="39" /></a></li>
-        </ul>
-    <?php } else { ?>
-        <ul class="social-links">
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/ln-h.png" alt="LinkedIn" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/facebook-h.png" alt="Facebook" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/twitter-h.png" alt="Twitter" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/gplus-h.png" alt="GooglePlus" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/youtube-h.png" alt="Youtube" width="33" height="39" /></a></li>
-        </ul>
-
-    <?php }
 }

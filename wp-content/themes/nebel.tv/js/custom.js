@@ -4,10 +4,7 @@
 
 ( function( $ ) {
 
-    $( document ).on( "click", ".home #menu-top-menu a,.home #menu-side-menu-buttons a", function( e ) {
-        e.preventDefault();
-        return false;
-    } );
+
 
     /* Side menu */
     $(document).ready(function() {
@@ -36,6 +33,9 @@
      $('.content-scroll').height(sb_h - 100);
      } */
     $('.content-scroll').height(win_h - sh_h - (0.14 * win_h ));
+
+
+
 
 
 } )( jQuery );
