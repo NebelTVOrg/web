@@ -58,7 +58,7 @@ get_header(); ?>
             </article>
             <div class="sub-content clear">
                 <?php aeg_pagination(); ?>
-                <?php get_template_part('inc/social'); ?>
+                <?php aeg_socials(); ?>
             </div>
         </div><!-- #content -->
         <?php get_sidebar(); ?>
