@@ -85,7 +85,7 @@
 
     <aside class="footer_sections">
             <h3 class="footer_titles social_header">Social Network</h3>
-            <?php aeg_socials('grey'); ?>
+            <?php aeg_socials(); ?>
 
             <a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/donate-footer.png" class="aligncenter"/></a>
 
@@ -96,8 +96,8 @@
         <div class="subfooter">
             <ul>
                 <li>Meta</li>
-                <li><a class="f_b_links" href="<?php home_url('/') ?>wp-login">Log in</a></li>
-                <li><a class="f_b_links" href="<?php home_url('/') ?>feed/">Entries RSS</a></li>
+                <li><a class="f_b_links" href="<?php echo home_url('/'); ?>wp-login.php">Log in</a></li>
+                <li><a class="f_b_links" href="<?php echo home_url('/'); ?>feed">Entries RSS</a></li>
                 <li><a class="f_b_links" href="http://nebeltv.disqus.com/latest.rss">Comments RSS</a></li>
             </ul>
     <p class="copy">Copyright &copy; <?php echo date('Y'); ?> Nebel.tv</p>

@@ -1,4 +1,7 @@
 <?php
+/**
+ * Template Name: Static Page
+ */
 
 get_header(); ?>
 
@@ -12,7 +15,7 @@ get_header(); ?>
                         <div class="post-content">
                             <header class="entry-header clear">
                                 <h1 class="post-title"><?php the_title(); ?></h1>
-                                <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+                                     <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
                             </header><!-- .entry-header -->
                             <div class="entry-summary">
                                 <?php the_content(); ?>

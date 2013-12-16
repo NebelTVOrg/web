@@ -74,7 +74,7 @@ function twentythirteen_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
 	 */
-	add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', twentythirteen_fonts_url() ) );
+	//add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', twentythirteen_fonts_url() ) );
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -125,39 +125,6 @@ add_action( 'after_setup_theme', 'twentythirteen_setup' );
 
 add_filter('show_admin_bar', '__return_false');
 
-function twentythirteen_fonts_url() {
-	$fonts_url = '';
-
-	/* Translators: If there are characters in your language that are not
-	 * supported by Source Sans Pro, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'twentythirteen' );
-
-	/* Translators: If there are characters in your language that are not
-	 * supported by Bitter, translate this to 'off'. Do not translate into your
-	 * own language.
-	 */
-	$bitter = _x( 'on', 'Bitter font: on or off', 'twentythirteen' );
-
-	if ( 'off' !== $source_sans_pro || 'off' !== $bitter ) {
-		$font_families = array();
-
-		if ( 'off' !== $source_sans_pro )
-			$font_families[] = 'Source Sans Pro:300,400,700,300italic,400italic,700italic';
-
-		if ( 'off' !== $bitter )
-			$font_families[] = 'Bitter:400,700';
-
-		$query_args = array(
-			'family' => urlencode( implode( '|', $font_families ) ),
-			'subset' => urlencode( 'latin,latin-ext' ),
-		);
-		$fonts_url = add_query_arg( $query_args, "//fonts.googleapis.com/css" );
-	}
-
-	return $fonts_url;
-}
 
 /**
  * Enqueue scripts and styles for the front end.
@@ -171,12 +138,12 @@ function twentythirteen_scripts_styles() {
 	 * Adds JavaScript to pages with the comment form to support
 	 * sites with threaded comments (when in use).
 	 */
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
+	//if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
+	//	wp_enqueue_script( 'comment-reply' );
 
 	// Adds Masonry to handle vertical alignment of footer widgets.
-	if ( is_active_sidebar( 'sidebar-1' ) )
-		wp_enqueue_script( 'jquery-masonry' );
+	//if ( is_active_sidebar( 'sidebar-1' ) )
+	//	wp_enqueue_script( 'jquery-masonry' );
 
     // Loads Jquery UI
     wp_enqueue_script( 'jquery-mousewheel', get_template_directory_uri() . '/js/jquery.mousewheel.min.js', array( 'jquery' ), '2013-11-11', true );
@@ -613,7 +580,7 @@ function aeg_post_date( $echo = true ) {
 }
 // Pagination
 
-function aeg_pagination($pages = '', $range = 1)
+function aeg_pagination($pages = '', $range = 4)
 {
     $showitems = ($range * 2)+1;
 
@@ -632,9 +599,13 @@ function aeg_pagination($pages = '', $range = 1)
 
     if(1 != $pages)
     {
-        echo "<ul class=\"pagination\">";
+        echo "<ul class=\"pagination clear\">";
         //if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<li class='first'><a href='".get_pagenum_link(1)."'>First</a></li>";
-        if($paged > 1) echo "<li class='prev'><a href='".get_pagenum_link($paged - 1)."'>Prev</a></li>";
+        if($paged > 1) :
+            echo "<li class='prev green-gr'><a href='".get_pagenum_link($paged - 1)."'>Prev</a></li>";
+        else :
+            echo "<li class=\"prev inactive grey-gr\">Prev</li>";
+        endif;
 
         for ($i=1; $i <= $pages; $i++)
         {
@@ -644,7 +615,11 @@ function aeg_pagination($pages = '', $range = 1)
             }
         }
 
-        if ($paged < $pages) echo "<li class='next'><a href=\"".get_pagenum_link($paged + 1)."\">Next</a></li>";
+        if ($paged < $pages) :
+            echo "<li class='next green-gr'><a href=\"".get_pagenum_link($paged + 1)."\">Next</a></li>";
+        else :
+            echo "<li class=\"next inactive grey-gr\">Next</li>";
+        endif;
         //if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<li class='last'><a href='".get_pagenum_link($pages)."'>Last</a></li>";
         echo "</ul>\n";
     }
@@ -844,8 +819,8 @@ function aeg_get_calendar($initial = true, $echo = true) {
         echo apply_filters( 'aeg_get_calendar',  $calendar_output );
     else
         return apply_filters( 'aeg_get_calendar',  $calendar_output );
-
 }
+
 function aeg_recent_comments() {
     include_once( ABSPATH . WPINC . '/feed.php' );
     $feed_url = 'http://nebeltv.disqus.com/latest.rss';
@@ -866,23 +841,12 @@ function aeg_recent_comments() {
         endforeach;
     endif;
 }
-function aeg_socials($color='green') {
-    if($color == 'green') { ?>
-        <ul class="social-links">
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/linkedin.png" alt="LinkedIn" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/facebook.png" alt="Facebook" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/twitter.png" alt="Twitter" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/gplus.png" alt="GooglePlus" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/youtube.png" alt="Youtube" width="33" height="39" /></a></li>
-        </ul>
-    <?php } else { ?>
-        <ul class="social-links">
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/ln-h.png" alt="LinkedIn" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/facebook-h.png" alt="Facebook" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/twitter-h.png" alt="Twitter" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/gplus-h.png" alt="GooglePlus" width="33" height="39" /></a></li>
-            <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social-icons/youtube-h.png" alt="Youtube" width="33" height="39" /></a></li>
-        </ul>
-
-    <?php }
+function aeg_socials() {
+    echo "<ul class=\"social-links clear\">\n";
+    echo "<li class=\"soc-ln\"><a href=\"#\">LinkedIn</a></li>\n";
+    echo "<li class=\"soc-fb\"><a href=\"#\">Facebook</a></li>\n";
+    echo "<li class=\"soc-tw\"><a href=\"#\">Twitter</a></li>\n";
+    echo "<li class=\"soc-gp\"><a href=\"#\">GooglePlus</a></li>\n";
+    echo "<li class=\"soc-yt\"><a href=\"#\">Youtube</a></li>\n";
+    echo "</ul>\n";
 }

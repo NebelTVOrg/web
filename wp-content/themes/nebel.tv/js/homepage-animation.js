@@ -113,10 +113,7 @@ function menu_effects(){
         switch(value){
             case 'media-sharing':  $('html, body').animate({
                 scrollTop: 2000
-            }, 1000);
-
-
-                break;
+            }, 1000);break;
             case 'live-content':  $('html, body').animate({
                 scrollTop: 4000
             }, 1000); break;
@@ -150,6 +147,7 @@ function menu_effects(){
 
 var homepage_effects = function() {
     var i = 0;
+    var footer = $('.home #footer');
     $(window).scroll(function(event){
         if($(this).scrollTop() < 1500){
             $('#menu-top-menu li').removeClass('current_page_item');
@@ -221,6 +219,12 @@ var homepage_effects = function() {
             $('#menu-secondary-menu li').eq(5).addClass('current_page_item');
             $('.side-menu-buttons li').removeClass('current-menu-item');
             $('.side-menu-buttons li').eq(9).addClass('current-menu-item');
+
+        }
+        if($(this).scrollTop() > 34000) {
+            var footer_position = $('body').height() - footer.height();
+            footer.show().css("top",footer_position );
+
         }
     });
 
@@ -229,10 +233,11 @@ var homepage_effects = function() {
         event.preventDefault();
     });
 
-
+    var  hbody=  $('html, body');
    /* NAviagation of Features part */
     $('li.mhm a, a.home-link, a.home-mobile-link ').click(function() {
-        $('html, body').animate({
+
+        hbody.animate({
             scrollTop: 0
         }, 1000);
     });
@@ -256,33 +261,33 @@ var homepage_effects = function() {
             scrollTop: 9500
         }, 1000);
     });
-
+    $('li.mui a').click( function() {
+        hbody.stop().animate({
+            scrollTop: 9500
+        } , 1000);
+    });
     $('li.mpz a').click( function() {
-        $("html, body").stop();
-        $('html, body').animate(
-            { scrollTop: 23500} , 1000);
+        hbody.stop().animate({
+            scrollTop: 23500
+        } , 1000);
     });
     $('li.mps a').click( function() {
-        $("html, body").stop();
-        $('html, body').animate({
+        hbody.stop().animate({
             scrollTop: 26300
         }, 1000);
     });
     $('li.mni a').click( function() {
-        $("html, body").stop();
-        $('html, body').animate({
+        hbody.stop().animate({
             scrollTop: 28500
         }, 1000);
     });
     $('li.may a').click( function() {
-        $("html, body").stop();
-        $('html, body').animate({
+        hbody.stop().animate({
             scrollTop: 30500
         }, 1000);
     });
     $('li.msec a').click( function() {
-        $("html, body").stop();
-        $('html, body').animate({
+        hbody.stop().animate({
             scrollTop: 32700
         }, 1000);
     });
@@ -435,6 +440,7 @@ $(document).ready(function() {
         elem.css('right', p_w / 2 - e_w /2);
     }
 
+
     /*no paralax height */
 
     /* Switch off jQuery animation on mobile screens and screen with window width more then 1024*/
@@ -460,7 +466,7 @@ $(document).ready(function() {
 
         window_width_depending();
     });*/
-    var waitForFinalEvent = (function () {
+   /* var waitForFinalEvent = (function () {
         var timers = {};
         return function (callback, ms, uniqueId) {
             if (!uniqueId) {
@@ -480,9 +486,16 @@ $(document).ready(function() {
         menu_effects();
     });
 
-
+*/
 
 });
+
+   /**********8 Windows resize Bind ****************/
+   $(window).resize(function () {
+       menu_effects();
+
+   });
+
 
 
 } )( jQuery );

@@ -11,7 +11,7 @@ get_header(); ?>
     <div class="side-menu-buttons">
         <?php wp_nav_menu( array( 'theme_location' => 'side', 'menu_class' => '' ) ); ?>
     </div>
-    <div id="primary" class="content-area">
+    <div id="primary">
     <div id="content" class="site-content" role="main">
 
     <article class="slice-1 slice" data-500="position:abosolute;top:20px;" data-1500="top: -700px;">
@@ -120,16 +120,16 @@ get_header(); ?>
    <article class="slice slice-5 ui ui-1" data-7500="" data-10500="">
         <div class="entry-content">
             <a  name="features"></a>
-            <div class="text center" data-8000="top:1000px" data-8700="top:60px" data-10000="top:60px" data-10500="top:-600px">
+            <div class="text center" data-7600="top:1000px" data-8400="top:60px" data-10000="top:60px" data-10500="top:-600px">
                 <h2 class="green drop-shadow fs-42">Friend feeds</h2>
                 <p class="white drop-shadow">
                     the stream of audio/video commented/rated by your network. Your highly personalized media guide.
                 </p>
             </div>
-            <div class="tv" data-8000="left:-1000px" data-8700="left:0px" data-10000="left:0px" data-10500="left:-1000px">
-                <div class="magnifier" data-8700="opacity:0" data-9200="opacity:1" data-10000="opacity:1" data-10500="opacity:0"></div>
+            <div class="tv" data-7600="left:-1000px" data-8400="left:0px" data-10000="left:0px" data-10500="left:-1000px">
+                <div class="magnifier" data-8400="opacity:0" data-9200="opacity:1" data-10000="opacity:1" data-10500="opacity:0"></div>
             </div>
-            <div class="magnified" data-8700="opacity:0" data-9200="opacity:1" data-10000="opacity:1" data-10500="opacity:0"></div>
+            <div class="magnified" data-8400="opacity:0" data-9200="opacity:1" data-10000="opacity:1" data-10500="opacity:0"></div>
         </div>
     </article>
     <article class="slice slice-6 ui ui-2" data-9500="" data-12500="">
@@ -219,8 +219,8 @@ get_header(); ?>
     <article class="slice slice-12" data-22500="" data-25500="">
         <div class="entry-content">
 
-            <div class="pay-zero-1" data-22500="left:-1000px" data-23000="left:0" data-24500="top:50px" data-25500="top:-600px"></div>
-            <div class="pay-zero-2" data-22500="right:-1000px" data-23000="right:0" data-24500="top:110px" data-25500="top:-600px"></div>
+            <div class="pay-zero-1" data-22000="left:-1000px" data-23000="left:0" data-24500="top:50px" data-25500="top:-600px"></div>
+            <div class="pay-zero-2" data-22000="right:-1000px" data-23000="right:0" data-24500="top:110px" data-25500="top:-600px"></div>
             <div class="pay-zero" data-23000="top:1000px" data-23200="top:70px" data-24500="top:70px" data-25500="top:-600px">
                 <a name="payzero"></a>
                 <h2 class="white drop-shadow"> is for free!!!</h2>
@@ -309,20 +309,20 @@ get_header(); ?>
             </div>
         </div>
     </article>
-    <article class="slice slice-16" data-30500="" data-33500="">
+    <article class="slice slice-16" data-30500="" data-32000="">
         <div class="entry-content">
             <a name="security"></a>
-            <div class="text" data-31500="top:1000px" data-32200="top:60px">
+            <div class="text" data-31500="top:1000px" data-32200="top:60px" data-33200="top:60px" data-34000="top:1000px">
                 <h2 class="white drop-shadow">The ability to make all of your viewing activities private:</h2>
                 <h3 class="white drop-shadow">You have the ability to share your content and social network with only those you choose. Nothing is shared unless you choose to.</h3>
             </div>
-            <div class="left" data-32200="opacity:0" data-32700="opacity:1">
+            <div class="left" data-32200="opacity:0" data-32700="opacity:1"  data-33700="opacity:1" data-34100="opacity:0">
                 <p class="green">
                     <img src="<?php echo get_template_directory_uri();?>/images/security-1.png" width="204" height="183"/><br/>
                     Share your content with one friend or group. Nobody is able to pick in!
                 </p>
             </div>
-            <div class="right" data-32200="opacity:0" data-32700="opacity:1">
+            <div class="right" data-32200="opacity:0" data-32700="opacity:1" data-33700="opacity:1" data-34100="opacity:0">
                 <p class="green">
                     <img src="<?php echo get_template_directory_uri();?>/images/security-2.png" width="196" height="183"/> <br/>
                     Make your social network private: no one except you can analyze and monetize your network.
@@ -330,8 +330,9 @@ get_header(); ?>
             </div>
         </div>
     </article>
-   </div>
+
+   </div><!-- no palalx -->
+
     </div><!-- #content -->
     </div><!-- #primary -->
-
 <?php get_footer(); ?>

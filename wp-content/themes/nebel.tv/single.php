@@ -36,7 +36,7 @@ get_header(); ?>
                             		<?php the_content(); ?>
                                     <footer class="entry-meta">
                                         <?php aeg_post_date(); ?>
-                                        <?php get_template_part('inc/social'); ?>
+                                        <?php aeg_socials(); ?>
                                         <?php twentythirteen_post_nav(); ?>
                                 		<?php if ( comments_open() && ! is_single() ) : ?>
                                 			<div class="comments-link">
