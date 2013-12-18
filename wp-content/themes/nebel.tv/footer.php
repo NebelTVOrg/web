@@ -101,6 +101,7 @@
                 <li><a class="f_b_links" href="http://nebeltv.disqus.com/latest.rss">Comments RSS</a></li>
             </ul>
     <p class="copy">Copyright &copy; <?php echo date('Y'); ?> Nebel.tv</p>
+            <p class="version">Version: <?php nebel_version(); ?></p>
          </div>
 
 </footer>

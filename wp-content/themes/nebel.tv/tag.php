@@ -41,9 +41,9 @@ get_header(); ?>
                                             <div class="clear">
                                                 <a class="read-more" href="<?php echo get_permalink()?>">Read More&hellip;</a>
                                                 <?php aeg_author_meta(); ?>
-                                                <?php aeg_post_date(); ?>
                                                 <?php aeg_tag_meta(); ?>
                                                 <?php aeg_cat_meta(); ?>
+                                                <?php aeg_post_date(); ?>
                                             </div>                                                
                                         </div>
                                 </div><!-- .post-preview -->

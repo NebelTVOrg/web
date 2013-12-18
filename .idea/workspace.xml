@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9925e535-1d4d-4d3e-845d-90cc9735e179" name="Default" comment="updated gitignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/images/homepage-item.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/jquery-ui-1.10.3.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/jquery-ui-1.10.3.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/functions.js" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/archive.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/archive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/category.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/custom.js" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/homepage.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/homepage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/homepage-animation.js" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/js/homepage-animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/search.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/single.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/nebel.tv/tag.php" afterPath="$PROJECT_DIR$/wp-content/themes/nebel.tv/tag.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nebel.tv.iws" />
@@ -36,7 +40,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3347" column="17" selection-start="57591" selection-end="57591" vertical-scroll-proportion="0.0" vertical-offset="49957" max-vertical-offset="55770">
+            <state line="2510" column="0" selection-start="47096" selection-end="47096" vertical-scroll-proportion="0.0" vertical-offset="37650" max-vertical-offset="70080">
               <folding />
             </state>
           </provider>
@@ -45,7 +49,7 @@
       <file leaf-file-name="page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="825">
+            <state line="8" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -54,14 +58,8 @@
       <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="70" selection-start="6049" selection-end="6049" vertical-scroll-proportion="-10.458333" vertical-offset="2089" max-vertical-offset="8100">
-              <folding>
-                <marker date="1384201647000" expanded="true" signature="9655:10217" placeholder="..." />
-                <marker date="1384201647000" expanded="true" signature="9772:10190" placeholder="..." />
-                <marker date="1384201647000" expanded="true" signature="10797:11215" placeholder="..." />
-                <marker date="1384201647000" expanded="true" signature="10913:11188" placeholder="..." />
-                <marker date="1384201647000" expanded="true" signature="13093:13302" placeholder="..." />
-              </folding>
+            <state line="165" column="46" selection-start="5426" selection-end="5426" vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="13200">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +76,7 @@
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="101" selection-start="1224" selection-end="1254" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="945">
+            <state line="34" column="0" selection-start="1341" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
@@ -88,9 +86,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/js/jquery-ui-1.10.3.custom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2309" column="4" selection-start="63722" selection-end="63722" vertical-scroll-proportion="0.0" vertical-offset="34381" max-vertical-offset="55965">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,7 +94,7 @@
       <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="790" selection-end="790" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="345">
+            <state line="22" column="4" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -107,7 +103,7 @@
       <file leaf-file-name="homepage.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/homepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="94" selection-start="829" selection-end="829" vertical-scroll-proportion="0.5196305" vertical-offset="0" max-vertical-offset="2880">
+            <state line="41" column="56" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.019329896" vertical-offset="510" max-vertical-offset="4635">
               <folding />
             </state>
           </provider>
@@ -116,7 +112,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="15" selection-start="5174" selection-end="5174" vertical-scroll-proportion="0.0" vertical-offset="1974" max-vertical-offset="2700">
+            <state line="160" column="15" selection-start="5043" selection-end="5043" vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="7995">
               <folding />
             </state>
           </provider>
@@ -161,10 +157,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="25" />
-    <option name="width" value="1436" />
-    <option name="height" value="871" />
+    <option name="x" value="1430" />
+    <option name="y" value="-4" />
+    <option name="width" value="1985" />
+    <option name="height" value="1157" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -192,6 +188,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,7 +203,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
+              <option name="myItemId" value="NebelTvGit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -216,61 +213,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
+              <option name="myItemId" value="NebelTvGit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -284,7 +227,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
+              <option name="myItemId" value="NebelTvGit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -302,7 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
+              <option name="myItemId" value="NebelTvGit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -315,52 +258,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nebel.tv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,6 +274,139 @@
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="09dc9ba5-dbbe-4328-928a-0e2567c8a77f">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="15bc17b7-5fac-4b32-b2b8-f0bcd1856130">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="181a97de-3f09-44fc-87bc-74eed9eedb81">
+        <serverdata />
+      </server>
+      <server id="1e8d51d8-e828-41dc-99a2-9b7bf77dbe72">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="26023a55-1ee8-400c-841f-85ef6bee555d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="2b1a873b-8395-4e9e-93af-26ee646392ba">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="2c259f26-28a1-4b36-8d6c-6436f0841ff3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="6aa14430-93fe-425b-aaef-2557944b49e4">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="849ffcb7-e8c8-49d9-8c6a-5563c62efba6">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="9574128d-a1ed-4f11-9cb7-01a197fbdbfa">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="bb29b98e-5c45-4435-85fe-a31d285da847">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="bb8b01b0-6cbc-451b-a44d-a965d3931d93">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="c1279a13-b347-4930-9a46-c8b8ca79ea72">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="c1d67ae1-5b5d-41dc-bbee-f799e6922366">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="c4f28f76-72b2-4605-908d-273765bc1aa8">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="c91732b8-b9c5-4651-a023-32967bd96dd6">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="d702729d-7a8c-4d48-8552-4da67062b370">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="e6ce2f3a-7d7e-4d9f-8767-2bd3a6bd6bd6">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="e7c8ae6f-7084-4b78-9377-e81775d93e71">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -439,29 +474,33 @@
       <created>1384196762359</created>
       <updated>1384196762359</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="core theme update.&#10;Menu animation&#10;Script optimizations.&#10;Sttic pagegs&#10;Blog&#10;etc/">
+      <created>1387227659118</created>
+      <updated>1387227659118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="25" width="1436" height="871" extended-state="6" />
-    <editor active="true" />
+    <frame x="1430" y="-4" width="1985" height="1157" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32860824" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19670543" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6713917" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17196168" sideWeight="0.8032946" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -479,7 +518,8 @@
     <MESSAGE value="removed design folder,&#10;updated gitignore" />
     <MESSAGE value="updated gitignore" />
     <MESSAGE value="added latest sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="added latest sql" />
+    <MESSAGE value="core theme update.&#10;Menu animation&#10;Script optimizations.&#10;Sttic pagegs&#10;Blog&#10;etc/" />
+    <option name="LAST_COMMIT_MESSAGE" value="core theme update.&#10;Menu animation&#10;Script optimizations.&#10;Sttic pagegs&#10;Blog&#10;etc/" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -487,32 +527,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sql/dump_01_11_2013.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="1535" selection-start="5795" selection-end="5795" vertical-scroll-proportion="0.36980307" vertical-offset="1406" max-vertical-offset="4050">
-          <folding />
-        </state>
+        <state line="105" column="1535" selection-start="5795" selection-end="5795" vertical-scroll-proportion="0.36980307" vertical-offset="1406" max-vertical-offset="4050" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/nebel_2013-11-11.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="37" selection-start="4989" selection-end="4989" vertical-scroll-proportion="0.5162037" vertical-offset="1652" max-vertical-offset="13710">
-          <folding />
-        </state>
+        <state line="125" column="37" selection-start="4989" selection-end="4989" vertical-scroll-proportion="0.5162037" vertical-offset="1652" max-vertical-offset="13710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/page-1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="448" selection-end="448" vertical-scroll-proportion="0.27251732" vertical-offset="47" max-vertical-offset="480">
-          <folding />
-        </state>
+        <state line="17" column="47" selection-start="448" selection-end="448" vertical-scroll-proportion="0.27251732" vertical-offset="47" max-vertical-offset="480" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/css/jquery.mCustomScrollbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="37" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.9781182" vertical-offset="1923" max-vertical-offset="8475">
-          <folding>
-            <marker date="1384114225000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="158" column="37" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.9781182" vertical-offset="1923" max-vertical-offset="8475" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/images/homepage-figure.png">
@@ -522,87 +552,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="790" selection-end="790" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="345">
+        <state line="22" column="4" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/js/jquery-ui-1.10.3.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="84" selection-start="693" selection-end="693" vertical-scroll-proportion="0.105337076" vertical-offset="0" max-vertical-offset="712">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="5" column="84" selection-start="693" selection-end="693" vertical-scroll-proportion="0.105337076" vertical-offset="0" max-vertical-offset="712" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/js/jquery-ui-1.10.3.custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2309" column="4" selection-start="63722" selection-end="63722" vertical-scroll-proportion="0.0" vertical-offset="34381" max-vertical-offset="55965">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/js/jquery/jquery.masonry.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="250" selection-end="250" vertical-scroll-proportion="0.18960674" vertical-offset="0" max-vertical-offset="712">
-          <folding />
-        </state>
+        <state line="9" column="45" selection-start="250" selection-end="250" vertical-scroll-proportion="0.18960674" vertical-offset="0" max-vertical-offset="712" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/js/jquery/jquery.query.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="270" selection-end="270" vertical-scroll-proportion="0.23026316" vertical-offset="0" max-vertical-offset="456">
-          <folding />
-        </state>
+        <state line="7" column="17" selection-start="270" selection-end="270" vertical-scroll-proportion="0.23026316" vertical-offset="0" max-vertical-offset="456" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1000" column="0" selection-start="15782" selection-end="15782" vertical-scroll-proportion="0.39658847" vertical-offset="14814" max-vertical-offset="57045">
-          <folding />
-        </state>
+        <state line="1000" column="0" selection-start="15782" selection-end="15782" vertical-scroll-proportion="0.39658847" vertical-offset="14814" max-vertical-offset="57045" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="101" selection-start="1224" selection-end="1254" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="945">
+        <state line="34" column="0" selection-start="1341" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="70" selection-start="6049" selection-end="6049" vertical-scroll-proportion="-10.458333" vertical-offset="2089" max-vertical-offset="8100">
-          <folding>
-            <marker date="1384201647000" expanded="true" signature="9655:10217" placeholder="..." />
-            <marker date="1384201647000" expanded="true" signature="9772:10190" placeholder="..." />
-            <marker date="1384201647000" expanded="true" signature="10797:11215" placeholder="..." />
-            <marker date="1384201647000" expanded="true" signature="10913:11188" placeholder="..." />
-            <marker date="1384201647000" expanded="true" signature="13093:13302" placeholder="..." />
-          </folding>
+        <state line="165" column="46" selection-start="5426" selection-end="5426" vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="13200">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3347" column="17" selection-start="57591" selection-end="57591" vertical-scroll-proportion="0.0" vertical-offset="49957" max-vertical-offset="55770">
+        <state line="2510" column="0" selection-start="47096" selection-end="47096" vertical-scroll-proportion="0.0" vertical-offset="37650" max-vertical-offset="70080">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="15" selection-start="5174" selection-end="5174" vertical-scroll-proportion="0.0" vertical-offset="1974" max-vertical-offset="2700">
+        <state line="160" column="15" selection-start="5043" selection-end="5043" vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="7995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nebel.tv/homepage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="94" selection-start="829" selection-end="829" vertical-scroll-proportion="0.5196305" vertical-offset="0" max-vertical-offset="2880">
+        <state line="41" column="56" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.019329896" vertical-offset="510" max-vertical-offset="4635">
           <folding />
         </state>
       </provider>

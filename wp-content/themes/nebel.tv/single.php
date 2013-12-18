@@ -16,19 +16,20 @@ get_header(); ?>
                 
                     <div class="entry-holder content-scroll">
                     <article id="post-<?php the_ID(); ?>" class ="post">
-                            <?php if ( has_post_thumbnail() ) : ?>
-                    		<div class="entry-thumbnail">
-                    			<?php the_post_thumbnail(); ?>
-                    		</div>
-                    		<?php endif; ?>
-                            <div class="post-content">                                
-                            	<header class="entry-header clear">
+
+                            <div class="post-content">
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <div class="entry-thumbnail">
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endif; ?>
+                            	<header class="entry-header">
                             		<h1 class="post-title"><?php the_title(); ?></h1>
                             		<div class="entry-meta">
-                            			<?php aeg_author_meta(); ?>
-                                        <?php aeg_cat_meta(); ?>
+                                        <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
                                         <?php aeg_tag_meta(); ?>
-                            			<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+                                        <?php aeg_cat_meta(); ?>
+                                        <?php aeg_author_meta(); ?>
                             		</div><!-- .entry-meta -->
                             	</header><!-- .entry-header -->
                             

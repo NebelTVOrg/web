@@ -67,8 +67,8 @@
                 <div class="hot-links">
                     <ul>
                         <li class="try-it-li"><a class="try-it-now top <?php  if(is_front_page()) { echo 'hidden'; }?> " href="#"></a></li>
-                        <li><a href="#" class="info">Info</a></li>
-                        <li><a href="#" class="mail">Mail</a></li>
+                        <li><a href="<?php home_url( '/' )  ?>/about/nebel-tv-at-a-glance/" class="info">Info</a></li>
+                        <li><a href="<?php home_url( '/' )  ?>/feedback/" class="mail">Mail</a></li>
 
                     </ul>
 

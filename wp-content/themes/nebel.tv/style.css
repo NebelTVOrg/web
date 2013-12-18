@@ -4,7 +4,7 @@ Theme URI: http://nebel.tv;
 Author: nebel.tv team
 Author URI: http://nebel.tv
 Description: Nebel.tv main theme
-Version: 1.0
+Version: 1.0.3
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -819,6 +819,7 @@ img.wp-smiley,
     position: fixed;
     display: none;
     width: 100%;
+    left: 0;
 }
 
 /**
@@ -1124,6 +1125,7 @@ img.wp-smiley,
     background: #adbf7f;
     height: 60px;
     border-bottom: 7px solid #74824e;
+    left: 0;
 }
 .menu-about-us-menu-container{
     display: block;
@@ -1507,7 +1509,7 @@ article.post {
 }
 .single .entry-meta .author a {
     color: #000;
-    display: block;
+    display: inline;
 }
 .single .post-content {
     overflow: hidden;
@@ -1530,9 +1532,6 @@ article.post {
     float: left;
 }
 .nav-links .meta-nav-next {
-    float: right;
-}
-.post-edit-link {
     float: right;
 }
 
@@ -1612,9 +1611,9 @@ ul.posts li {
     margin-bottom: 10px;
 }
 .entry-meta {
-    clear: both;
     font-size: 10px;
     line-height: 17px;
+    text-align: right;
 }
 .entry-meta a {
     color: #2881af;
@@ -1626,13 +1625,12 @@ ul.posts li {
 }
 .entry-meta .author a, .entry-header .author a {
     color: #000;
-    float: right;
 }
-.entry-header .author a {
+body.blog .entry-header .author.vcard, .archieve .entry-header .author.vcard, .search .entry-header .author.vcard {
     display: none;
+    float: right;
 }
 .entry-meta .categories-links {
-    float: right;
     font-family: "Helvetica Neue", Helvetica;
     font-weight: bold;
     display: none;
@@ -1650,9 +1648,11 @@ ul.posts li {
     text-decoration: none;
     color: #fff;
 }
+.entry-meta  span {
+    margin-left: 10px;
+}
 .entry-meta .tags-links {
     margin-top: 10px;
-    float: right;
     min-width: 100%;
     text-align: right;
 }
@@ -1878,7 +1878,7 @@ ul.posts li {
  * ----------------------------------------------------------------------------
  */
 
-.author-info { 
+.author-info {
     margin: 0 auto;
     max-width: 604px;
     padding: 30px 0 10px;
@@ -2295,7 +2295,7 @@ ul.social-links li.soc-yt, #footer ul.social-links li.soc-yt:hover {
     background-color: rgba(17, 10, 6, 0.8);
     border-top: 1px solid #322800;
     height: auto;
-    margin: 12px 0 10px;
+    margin: 12px 0 0;
     padding: 0 0 12px;
     color: #A99D95;
     width: 100%;
@@ -2356,6 +2356,9 @@ ul.footer_list.footer_cats li {
 }
 p.copy {
     text-align: center;
+}
+.subfooter {
+    padding: 12px 0;
 }
 .subfooter ul {
     list-style: none;
@@ -3194,15 +3197,12 @@ article.slice h2{
 
 @media only screen and (min-width: 480px) {
     /* -- Blog Content -- */
-    .entry-meta span.author {
-        display:none;
-    }
     .entry-meta .tags-links {
         margin-top: 0;
         min-width: 0;
     }
     .entry-meta .categories-links {
-        display: block;
+        display: inline;
     }
     .entry-summary {
         margin-left: 5px;
@@ -3218,10 +3218,10 @@ article.slice h2{
     .single .entry-meta .author a {
         display: inline;
     }
-    .single .entry-header .tags-links {
-        float: right;
+    body.blog .entry-meta .author, .archive .entry-meta .author, .search .entry-meta .author {
+        display: none;
     }
-    .edit-link {
+    body.blog .entry-header .author.vcard, .archieve .entry-header .author.vcard, .search .entry-header .author.vcard {
         display: block;
     }
     .box h2 {
@@ -3357,6 +3357,7 @@ article.slice h2{
     }
     .entry-meta {
         font-size: 14px;
+        margin: 24px 0;
     }
     .blog .entry-meta > div {
         height: 24px;
@@ -3428,10 +3429,11 @@ article.slice h2{
     ul.pagination li.prev, ul.pagination li.next {
         top: 0;
     }
-    .paged .sub-content ul.social-links{
+    .sub-content ul.social-links{
         top: -39px;
     }
     ul.social-links li,
+    ul.pagination li.placeholder,
     ul.pagination li.prev,
     ul.pagination li.next,
     ul.pagination li.prev.inactive,
@@ -3489,7 +3491,7 @@ article.slice h2{
     }
     /* -- Footer -- */
     #footer {
-        padding: 10px 0;
+        padding: 10px 0 0;
         font-size: 15px;
     }
     aside.footer_sections {
@@ -3504,7 +3506,7 @@ article.slice h2{
         width: 33px;
     }
     .subfooter {
-        padding: 12px 0 0;
+        padding: 12px 0 12px;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -3526,9 +3528,10 @@ article.slice h2{
         padding-left: 23px;
     }
     .single .entry-thumbnail {
-        width: 286px;
+        max-width: 286px;
         height: auto;
         margin-right: 40px;
+        margin-bottom: 15px;
     }
     .box {
         width: 22%;
@@ -3577,6 +3580,11 @@ article.slice h2{
     }
     p.copy {
         margin-left: 160px;
+    }
+    .version{
+        float: right;
+        margin: 0;
+        display: inline-block;
     }
     #divider {
         height: 8px;

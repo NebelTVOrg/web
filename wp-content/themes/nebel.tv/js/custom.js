@@ -32,7 +32,7 @@
     /*  if(0 != sb_h) {
      $('.content-scroll').height(sb_h - 100);
      } */
-    $('.content-scroll').height(win_h - sh_h - (0.14 * win_h ));
+    //$('.content-scroll').height(win_h - sh_h - (0.14 * win_h ));
 
 
 

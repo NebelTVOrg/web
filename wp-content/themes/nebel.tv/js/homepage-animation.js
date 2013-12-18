@@ -123,7 +123,7 @@ function menu_effects(){
             case 'features':  $('html, body').animate({
                 scrollTop: 9500
             }, 1000); break;
-            case 'pay-zero':  $('html, body').animate({
+            case 'payzero':  $('html, body').animate({
                 scrollTop: 23500
             }, 1000); break;
             case 'paymentsystem':  $('html, body').animate({
@@ -222,7 +222,7 @@ var homepage_effects = function() {
 
         }
         if($(this).scrollTop() > 34000) {
-            var footer_position = $('body').height() - footer.height();
+            var footer_position = $('body').height() - footer.outerHeight( true );
             footer.show().css("top",footer_position );
 
         }
@@ -449,7 +449,7 @@ $(document).ready(function() {
 
 
     if ($(window).width() > 1024){
-        $('.menu-secondary-menu-container, #no-paralax').show().attr('data-7500', 'top: 101px').attr('data-7000', 'top:1100px');
+        $('.menu-secondary-menu-container, #no-paralax').show().attr('data-7500', 'top: 101px').attr('data-1000', 'top:11000px');
 
         homepage_effects();
         var s = skrollr.init();

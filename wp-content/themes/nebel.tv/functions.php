@@ -1,4 +1,24 @@
 <?php
+function nebel_version(){
+/*
+ * Assign theme folder name that you want to get information.
+ * make sure theme exist in wp-content/themes/ folder.
+ */
+
+$theme_name = 'nebel.tv';
+
+/*
+* Do not use get_stylesheet_uri() as $theme_filename,
+* it will result in PHP fopen error if allow_url_fopen is set to Off in php.ini,
+* which is what most shared hosting does. You can use get_stylesheet_directory()
+* or get_template_directory() though, because they return local paths.
+*/
+
+$theme_data = get_theme_data( get_theme_root() . '/' . $theme_name . '/style.css' );
+echo $theme_data['Version'];
+
+}
+
 /**
  * Twenty Thirteen functions and definitions
  *
@@ -622,6 +642,8 @@ function aeg_pagination($pages = '', $range = 4)
         endif;
         //if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<li class='last'><a href='".get_pagenum_link($pages)."'>Last</a></li>";
         echo "</ul>\n";
+    } else {
+        echo "<ul class=\"pagination clear\"><li class=\"placeholder\"></li></ul>";
     }
 }
 
@@ -843,10 +865,10 @@ function aeg_recent_comments() {
 }
 function aeg_socials() {
     echo "<ul class=\"social-links clear\">\n";
-    echo "<li class=\"soc-ln\"><a href=\"#\">LinkedIn</a></li>\n";
-    echo "<li class=\"soc-fb\"><a href=\"#\">Facebook</a></li>\n";
-    echo "<li class=\"soc-tw\"><a href=\"#\">Twitter</a></li>\n";
-    echo "<li class=\"soc-gp\"><a href=\"#\">GooglePlus</a></li>\n";
+    echo "<li class=\"soc-ln\"><a href=\"http://www.linkedin.com/company/nebel-tv-foundation\">LinkedIn</a></li>\n";
+    echo "<li class=\"soc-fb\"><a href=\"https://www.facebook.com/nebeltv\">Facebook</a></li>\n";
+    echo "<li class=\"soc-tw\"><a href=\"https://twitter.com/NebelTV\">Twitter</a></li>\n";
+    echo "<li class=\"soc-gp\"><a href=\"https://plus.google.com/u/1/b/102719639522173856624/102719639522173856624/admin/?tab=XX\">GooglePlus</a></li>\n";
     echo "<li class=\"soc-yt\"><a href=\"#\">Youtube</a></li>\n";
     echo "</ul>\n";
 }
